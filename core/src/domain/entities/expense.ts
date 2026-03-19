@@ -1,4 +1,4 @@
-import { ValidationError } from "@errors/validation.error";
+import { ValidationError } from "@error/validation.error";
 
 export class Expense {
   private readonly _id: number;
@@ -60,7 +60,6 @@ export class Expense {
     description: string;
     amount: number;
     createdAt: string | Date;
-    updatedAt: string | Date;
   }) {
     this._id = Expense.validate.id(params.id);
     this._description = Expense.validate.description(params.description);
