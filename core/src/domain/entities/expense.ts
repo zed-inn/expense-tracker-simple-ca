@@ -79,6 +79,14 @@ export class Expense {
   get createdAt() {
     return this._createdAt;
   }
+  get toJSON() {
+    return {
+      id: this._id,
+      description: this._description,
+      amount: this._amount,
+      createdAt: this._createdAt,
+    };
+  }
 
   redescribe(description: string) {
     const validatedDesc = Expense.validate.description(description);
