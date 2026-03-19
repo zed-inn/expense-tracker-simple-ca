@@ -1,0 +1,25 @@
+{
+  "name": "expense-tracker-cli",
+  "version": "1.0.0",
+  "description": "Expense Tracker CLI version",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "build": "npm run clean && npx tsc -p tsconfig.json && npx tsc-alias",
+    "dev": "nodemon",
+    "start": "node dist/index.js"
+  },
+  "author": "zed-inn",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "expense-tracker-core": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
