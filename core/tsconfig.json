@@ -8,7 +8,7 @@
     "moduleResolution": "nodenext",
 
     "paths": {
-      "@error/*": ["./src/domain/errors/*"],
+      "@error/*": ["./src/domain/errors/*", "./src/application/errors/*"],
       "@entity/*": ["./src/domain/entities/*"],
       "@interface/*": ["./src/application/interfaces/*"]
     },
