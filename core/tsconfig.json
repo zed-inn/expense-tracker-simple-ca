@@ -10,7 +10,8 @@
     "paths": {
       "@error/*": ["./src/domain/errors/*", "./src/application/errors/*"],
       "@entity/*": ["./src/domain/entities/*"],
-      "@interface/*": ["./src/application/interfaces/*"]
+      "@interface/*": ["./src/application/interfaces/*"],
+      "@usecases/*": ["./src/application/usecases/*"]
     },
     "esModuleInterop": true,
 
