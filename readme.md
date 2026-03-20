@@ -21,6 +21,7 @@ A lightweight expense tracking app built as a monorepo with a clean separation b
 ## 🏗️ Architecture
 
 ### core (domain/application)
+
 - `core/src/domain/entities/expense.ts`
   - `Expense` entity with strict validation (id positive integer, description non-empty, amount positive, date valid)
   - mutators: `redescribe`, `changeAmount`
@@ -33,6 +34,7 @@ A lightweight expense tracking app built as a monorepo with a clean separation b
 - `core/src/index.ts` exposes `ExpenseApplication` and error types; wires use cases and ports.
 
 ### apps/cli (adapter/implementation)
+
 - CLI commands in `apps/cli/src/index.ts` (Commander-based): `add`, `update`, `delete`, `list`, `summary`
 - Config layer in `apps/cli/src/config/core.ts` linking `ExpenseApplication` to concrete implementations.
 - JSON data store adapter:
@@ -42,6 +44,7 @@ A lightweight expense tracking app built as a monorepo with a clean separation b
 - Validation and domain errors from core are preserved across adapter boundaries.
 
 ### Persistence
+
 - File path controlled by `apps/cli/src/config/env.ts` (default `apps/cli/data/expenses.json`).
 
 ---
@@ -103,4 +106,4 @@ Assuming package is built or using `npm run --workspace apps/cli dev`:
 - This repo is a beginner-level clean architecture sample.
 - `core` is package-exported for potential reuse with other frontends.
 - `apps/cli` is an implementation detail using JSON file store.
-
+- This project was done as Roadmap.sh project (Expense Tracker)[https://roadmap.sh/projects/expense-tracker]
