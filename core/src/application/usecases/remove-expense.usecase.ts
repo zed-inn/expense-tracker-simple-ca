@@ -1,7 +1,7 @@
 import { ExpenseRepository } from "@interface/expense-repo.interface";
 
 type RemoveExpenseParameters = {
-  id: string;
+  id: number;
 };
 
 export class RemoveExpense {

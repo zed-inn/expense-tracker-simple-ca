@@ -2,7 +2,7 @@ import { DomainError } from "@error/domain.error";
 import { ExpenseRepository } from "@interface/expense-repo.interface";
 
 type UpdateExpenseParameters = {
-  id: string;
+  id: number;
   description?: string;
   amount?: number;
 };
