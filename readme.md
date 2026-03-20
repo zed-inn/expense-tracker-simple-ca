@@ -106,4 +106,4 @@ Assuming package is built or using `npm run --workspace apps/cli dev`:
 - This repo is a beginner-level clean architecture sample.
 - `core` is package-exported for potential reuse with other frontends.
 - `apps/cli` is an implementation detail using JSON file store.
-- This project was done as Roadmap.sh project (Expense Tracker)[https://roadmap.sh/projects/expense-tracker]
+- This project was done as Roadmap.sh project [Expense Tracker](https://roadmap.sh/projects/expense-tracker)
